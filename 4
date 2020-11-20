@@ -1,0 +1,11 @@
+def producto (numero_1,numero_2,cont = 0,resultado = 0):
+    if numero_1==0 or numero_2==0:
+        return resultado
+    else:
+        return producto(numero_1,numero_2,cont + 1,resultado = resultado + numero_1) if cont<numero_2 else resultado
+
+            
+    
+a = int(input("Ingrese un num:"))
+b = int(input("Ingrese otro num:"))
+print(producto(a,b))
